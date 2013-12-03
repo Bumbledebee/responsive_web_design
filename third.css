@@ -1,6 +1,6 @@
-/** {
+* {
   box-sizing: border-box;
-}*/
+}
 
 .wrapper {
   max-width: 850px;
@@ -8,12 +8,13 @@
   margin-right: auto;
 }
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
+  height: auto
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 
 .clear {
@@ -28,9 +29,26 @@ img {
 }
 
 
+ .column:first-child {
+
+ }
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.image {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("http://farm9.staticflickr.com/8553/8750628409_d53f7f6a9e_n.jpg") no-repeat;
+}
+
+
+
 
 @media (min-width: 500px) {
   h1 {
@@ -41,14 +59,12 @@ body {
     clear: both;
     width: 100%;
   }
-  .column {
+ .column {
     width: 33.333%;
     float: left;
-    padding: 10px 20px;
+    padding: 5px 5px;
   }
-  .image {
-    text-align: center;
-  }
+
 }
 
 @media (max-width: 500px) {
@@ -56,12 +72,7 @@ body {
     font-size: 24px;
   }
   .column {
-    width: 100%;
-    float: left;
-    padding: 10px 20px;
-  }
-  .image, .text {
-    text-align: center;
+    padding: 5px 5px;
   }
 }
 
