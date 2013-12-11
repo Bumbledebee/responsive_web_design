@@ -9,12 +9,14 @@
 </head>
 <body >
     <div class="nav">
-      <a href="/index/">
-      <div class="logo"></a></div>
-      <a href="/html/">About</a>
-      <a href="/css/">Team</a>
-      <a href="/js/">Company</a>
-      <a href="/jquery/">Contact</a>
+      <a class="home" href="#" >
+        <img src="http://placekitten.com/g/200/300" class="logo">
+      </a>
+      <a class="home-text" href="#"> &#9776;</a>
+      <a class="rest" href="#">About</a>
+      <a class="rest" href="#">Team</a>
+      <a class="rest" href="#">Company</a>
+      <a class="rest" href="#">Contact</a>
     </div>
   <div class="top">
     <div class="wrapper">
@@ -52,5 +54,12 @@
 
 
   </div>
+<script type="text/javascript" src='jquery-2.0.3.min.js'>
+</script>
+<script>
+$('.home-text').click(function(){
+ $('.rest').toggle();
+});
+</script>
 </body>
 </html>
