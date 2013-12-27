@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://0.0.0.0:3000/entries/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Journal</title>
+
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="5/CO4npD9Fv+UaUesPewwCP0IzKQr88tMb362z2jqC4=" name="csrf-token">
+</head>
+<body>
+
+<h1> Create a new journal entry right here: </h1>
+
+<form accept-charset="UTF-8" action="http://0.0.0.0:3000/entries" class="new_entry" id="new_entry" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="5/CO4npD9Fv+UaUesPewwCP0IzKQr88tMb362z2jqC4="></div>
+
+<div>
+    <label for="entry_title">Title</label><br>
+    <input id="entry_title" name="entry[title]" type="text">
+</div>
+<div>
+  <label for="entry_body">Body</label><br>
+  <textarea id="entry_body" name="entry[body]"></textarea>
+</div>
+<div>
+  <label for="entry_user">User</label>
+  <select id="entry_user_id" name="entry[user_id]"><option value="1">DEbbie</option>
+<option value="2">Blabla</option></select>
+</div>
+<div>
+  <label for="entry_category">Category</label>
+  <select id="entry_category_id" name="entry[category_id]"><option value=""></option>
+<option value="1">Thriller</option>
+<option value="2">Romance</option>
+<option value="4">Detective Books</option></select>
+</div>
+<div>
+  <input name="commit" type="submit" value="Create Entry">
+</div>
+
+
+</form>
+
+
+<a href="http://0.0.0.0:3000/entries">Back</a>
+
+
+
+
+</body></html>
